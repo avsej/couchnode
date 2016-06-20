@@ -84,7 +84,9 @@
         'cflags_c':[
           '-pedantic',
           '-std=gnu99',
-        ]
+        ],
+        'cflags_cc!': ['-fno-rtti'],
+        'cflags_cc+': ['-frtti']
       }]
     ],
     'sources': [
